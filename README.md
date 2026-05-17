@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Problem Description
+## Problem Description
 
 Traffic sign recognition is a core component of autonomous driving and driver-assistance systems. This project builds and trains a **Convolutional Neural Network (CNN)** to classify 43 types of German traffic signs from the GTSRB benchmark dataset.
 
@@ -15,7 +15,7 @@ Two experiments are conducted to compare the effect of different optimisers on m
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Name:** GTSRB — German Traffic Sign Recognition Benchmark
 - **Source:** [Kaggle — meowmeowmeowmeowmeow/gtsrb-german-traffic-sign](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)
@@ -25,7 +25,7 @@ Two experiments are conducted to compare the effect of different optimisers on m
 
 ---
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 ```
 Input (64×64×3)
@@ -36,13 +36,13 @@ Input (64×64×3)
 ```
 
 **Enhancements applied:**
-- ✅ **Batch Normalisation** — stabilises and speeds up training between layers
-- ✅ **Dropout (0.5)** — prevents overfitting in the fully connected head
-- ✅ **Data Augmentation** — rotation, zoom, shift, shear applied to training set only via `ImageDataGenerator`
+-  **Batch Normalisation** — stabilises and speeds up training between layers
+-  **Dropout (0.5)** — prevents overfitting in the fully connected head
+-  **Data Augmentation** — rotation, zoom, shift, shear applied to training set only via `ImageDataGenerator`
 
 ---
 
-## 🧪 Experiments
+## Experiments
 
 | | Model A | Model B |
 |---|---|---|
@@ -56,15 +56,15 @@ Input (64×64×3)
 
 ---
 
-## 📊 Results
+## Results
 
 | Model | Accuracy | Loss |
 |---|---|---|
-| Model A — Adam (lr=0.001) | XX.XX% | X.XXXX |
-| Model B — SGD (lr=0.01, momentum=0.9) | XX.XX% | X.XXXX |
+| Model A — Adam (lr=0.001) | 0.9923% | 0.0209 |
+| Model B — SGD (lr=0.01, momentum=0.9) | 0.9935% | 0.0185 |
 
-> **Best model:** <!-- fill after training -->  
-> **Difference:** <!-- e.g. "Model A outperformed Model B by 3.2%" -->
+> **Best model: Model B (SGD) ** 
+> **Difference: .11% ** 
 
 ---
 
@@ -81,7 +81,7 @@ All plots are saved automatically to Google Drive under `traffic_sign_project/re
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -90,7 +90,8 @@ cd traffic-sign-classification
 ```
 
 ### 2. Open in Google Colab
-Upload `DL_Proj_Traffic.ipynb` to [colab.research.google.com](https://colab.research.google.com) and set the runtime to **GPU** (Runtime → Change runtime type → T4 GPU).
+
+Notebook Link: https://colab.research.google.com/drive/10dZRmkv-iQBIE7BYRPjUe9GZzPVxRz62?usp=sharing
 
 ### 3. Set up Kaggle credentials
 In **Cell 4**, replace the placeholders with your own Kaggle credentials:
@@ -136,7 +137,7 @@ IMAGE_PATH = '/content/your_image.png'
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 traffic-sign-classification/
