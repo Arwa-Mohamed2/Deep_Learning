@@ -63,8 +63,8 @@ Input (64×64×3)
 | Model A — Adam (lr=0.001) | 0.9923% | 0.0209 |
 | Model B — SGD (lr=0.01, momentum=0.9) | 0.9935% | 0.0185 |
 
-Best model: <!-- Model B (SGD) -->
-Difference: <!-- Model B outperformed Model B by .11% -->
+> **Best model:** Model B (SGD)
+> **Difference:** Model B outperformed Model A by 0.11%
 
 ---
 
